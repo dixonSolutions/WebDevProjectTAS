@@ -1,2 +1,2 @@
 **Web development project for TASA 2026**
-Mr Balal is torturing us, if you ever want to create a legitimate, not dinosaur age web app, https://angular.dev
+Mr Balal is a Dinosaur, if you ever want to create a legitimate web app, that actually looks good and functions well DO not make in pure html, css and javascript. This repos serves as  template for future force assignment and is hence accessible to other students. 🤮 https://angular.dev
