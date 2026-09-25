@@ -1,0 +1,183 @@
+:root,
+html[data-color-mode],
+html[data-color-mode] body,
+[data-color-mode][data-dark-theme],
+[data-color-mode][data-light-theme] {
+  color-scheme: light !important;
+
+  --glass-blur: 22px;
+  --glass-sat: 180%;
+  --glass-fill: rgba(255, 255, 255, 0.24);
+  --glass-fill-bar: rgba(255, 255, 255, 0.42);
+  --glass-fill-strong: rgba(255, 255, 255, 0.75);
+  --glass-fill-hover: rgba(255, 255, 255, 0.55);
+  --glass-edge: rgba(255, 255, 255, 0.7);
+  --glass-edge-soft: rgba(20, 30, 60, 0.10);
+  --glass-highlight: inset 0 0 0 1px var(--glass-edge), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  --glass-shadow: 0 12px 40px -12px rgba(40, 50, 90, 0.25);
+  --glass-radius: 14px;
+  --glass-accent: #2f5bea;
+  --glass-text: #1a2033;
+  --glass-text-muted: #56607a;
+
+  --bgColor-default: transparent !important;
+  --bgColor-muted: var(--glass-fill) !important;
+  --bgColor-inset: var(--glass-fill) !important;
+  --bgColor-neutral-muted: rgba(20, 30, 60, 0.06) !important;
+  --overlay-bgColor: var(--glass-fill-strong) !important;
+  --header-bgColor: var(--glass-fill-bar) !important;
+  --header-fgColor-default: var(--glass-text) !important;
+  --header-fgColor-logo: var(--glass-text) !important;
+  --borderColor-default: var(--glass-edge-soft) !important;
+  --borderColor-muted: var(--glass-edge-soft) !important;
+  --fgColor-default: var(--glass-text) !important;
+  --fgColor-muted: var(--glass-text-muted) !important;
+  --fgColor-accent: var(--glass-accent) !important;
+  --control-bgColor-rest: var(--glass-fill) !important;
+  --control-bgColor-hover: var(--glass-fill-hover) !important;
+  --button-default-bgColor-rest: var(--glass-fill) !important;
+  --button-default-bgColor-hover: var(--glass-fill-hover) !important;
+  --color-canvas-default: transparent !important;
+  --color-canvas-subtle: var(--glass-fill) !important;
+  --color-canvas-overlay: var(--glass-fill-strong) !important;
+  --color-header-bg: var(--glass-fill-bar) !important;
+  --color-header-text: var(--glass-text) !important;
+  --color-border-default: var(--glass-edge-soft) !important;
+  --color-fg-default: var(--glass-text) !important;
+  --color-fg-muted: var(--glass-text-muted) !important;
+  --color-accent-fg: var(--glass-accent) !important;
+}
+
+html {
+  background:
+    radial-gradient(1100px 700px at 8% 0%, rgba(120, 150, 255, 0.50), transparent 60%),
+    radial-gradient(900px 650px at 100% 20%, rgba(230, 150, 255, 0.45), transparent 60%),
+    radial-gradient(900px 700px at 40% 110%, rgba(110, 230, 220, 0.42), transparent 60%),
+    #eef1f8 !important;
+  background-attachment: fixed !important;
+  min-height: 100%;
+}
+
+html body,
+html body * {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--glass-text) !important;
+  text-shadow: none !important;
+}
+
+html body :is(div, section, article, main, form, fieldset, table, pre, blockquote, details, figure, ul, ol) {
+  background-color: var(--glass-fill) !important;
+  box-shadow: var(--glass-highlight) !important;
+  border-color: var(--glass-edge-soft) !important;
+  border-radius: var(--glass-radius);
+}
+
+html body :is(header, nav, aside, footer, [role="banner"], [role="navigation"], [role="complementary"], [role="toolbar"]) {
+  background-color: var(--glass-fill-bar) !important;
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat)) !important;
+  box-shadow: var(--glass-highlight), var(--glass-shadow) !important;
+  border-color: var(--glass-edge) !important;
+}
+
+html body :is(dialog, [popover], [role="dialog"], [role="menu"], [role="listbox"], [role="tooltip"]) {
+  background-color: var(--glass-fill-strong) !important;
+  backdrop-filter: blur(calc(var(--glass-blur) + 8px)) saturate(var(--glass-sat)) !important;
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur) + 8px)) saturate(var(--glass-sat)) !important;
+  border: 1px solid var(--glass-edge) !important;
+  border-radius: var(--glass-radius) !important;
+  box-shadow: var(--glass-shadow), var(--glass-highlight) !important;
+}
+
+dialog::backdrop {
+  background: rgba(230, 235, 250, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+html body :is(code, kbd, samp, th) {
+  background-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+html body tr:hover > td {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+html body hr {
+  border-color: var(--glass-edge-soft) !important;
+  background-color: var(--glass-edge-soft) !important;
+}
+
+html body :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea, select) {
+  background-color: rgba(255, 255, 255, 0.55) !important;
+  border: 1px solid var(--glass-edge) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 1px 3px rgba(40, 50, 90, 0.08) !important;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+
+html body :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea, select):focus {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: var(--glass-accent) !important;
+  box-shadow: 0 0 0 3px rgba(47, 91, 234, 0.2) !important;
+  outline: none !important;
+}
+
+html body ::placeholder {
+  color: var(--glass-text-muted) !important;
+  opacity: 0.8;
+}
+
+html body :is(button, [role="button"], input[type="button"], input[type="submit"]) {
+  background-color: var(--glass-fill) !important;
+  border-color: var(--glass-edge) !important;
+  box-shadow: var(--glass-highlight) !important;
+  transition: background-color 0.15s;
+}
+
+html body :is(button, [role="button"], input[type="button"], input[type="submit"]):hover {
+  background-color: var(--glass-fill-hover) !important;
+}
+
+html body a,
+html body a * {
+  color: var(--glass-accent) !important;
+}
+
+html body :focus-visible {
+  outline: 2px solid var(--glass-accent) !important;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(47, 91, 234, 0.22);
+  color: var(--glass-text);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(20, 30, 60, 0.25) transparent;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 30, 60, 0.2);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background-color: rgba(20, 30, 60, 0.35); }
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass-fill: rgba(250, 251, 255, 0.92);
+    --glass-fill-bar: rgba(250, 251, 255, 0.97);
+    --glass-fill-strong: rgba(250, 251, 255, 0.99);
+    --glass-blur: 0px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
