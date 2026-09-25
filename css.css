@@ -1,0 +1,82 @@
+    /* CSS Document */
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        /* these attributes set the default of margin, padding and borders to 0 across the entire page. these can then be altered as desired for particular sections. */
+        background-color: #6FF;
+        /* This selects a colour to be the default background that will be displayed behind the website */
+    }
+    #container {
+        width: 1000px;
+        /* creates a box that will contain the contents of your webpage. 1000 pixels wide. */
+        margin: 0 auto;
+        /* this sets the vertical margins to 0 and the horizontal to auto. the auto setting automatically centres the webpage onto the screen */
+        padding-top: 50px;
+        /* provides a 50 pixel space between the browser window and the top of your content  */
+    }
+    #header {
+        width: 100%;
+        /* sets the header to 100% of the container width  */
+        float: left;
+        /* floats the header to the left (this helps with the layout). */
+        height: 100px;
+        background-color: #00F;
+        /* text editing attributes */
+        font-family: Tahoma, Geneva, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* converts all text to capitals */
+        text-align: center;
+    }
+    #navbar {
+        height: 70px;
+        width: 100%;
+        float: left;
+        background-color: #06F;
+        text-align: center;
+    }
+    #navbar li {
+        /* this CSS ID edits those things with the list attribute only within the navbar ID */
+        display: inline;
+        list-style-type: none;
+    }
+    /* inline: lays the list out horizontally, list style: none: removes the bullet points  */
+    /* http://www.w3schools.com/css/css_navbar.asp	*/
+    #menu {
+        float: left;
+        width: 200px;
+        text-align: center;
+        height: 550px;
+        background-color: #F00;
+    }
+    #menu li {
+        /* this CSS id edits those things with the list attribute only within the menu id */
+        list-style-type: none;
+    }
+    #content {
+        background-color: #3F0;
+        width: 780px;
+        padding: 10px;
+        /* width = 1000px-200(menu)-padding */
+        height: 530px;
+        /* the height is restricted to a specified height */
+        float: right;
+        /* float is set to the right to allow it to sit to the right of the menu column */
+        overflow: scroll;
+        /* the overflow is contained into a scrollable area rather than altering the pages design */
+    }
+    #footer {
+        background-color: #93C;
+        width: 100%;
+        /* full width of container */
+        height: 150px;
+        float: left;
+    }
+
+    #topbar_iframe {
+        padding-bottom: 3px;
+
+    }

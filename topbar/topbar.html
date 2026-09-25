@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RadArt - Topbar</title>
+    <link rel="stylesheet" href="topbar.css">
+    <!-- the stylesheet link must point at the CSS file, not at this HTML page -->
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <!-- ../ means "go up one folder". This page lives in the topbar folder, so we
+         have to step back out to the main folder to find the images folder. -->
+</head>
+
+<body>
+    <!-- ============ THE TOPBAR ============
+         Copy everything between the topbar comments into any page you want the
+         bar to appear on, and link topbar.css in that page's <head>.
+         Remember to fix the ../ in the paths depending on which folder the page is in. -->
+    <div id="topbar">
+        <div id="logo">
+            <img src="../images/logo.png" alt="RadArt logo">
+            <span>RadArt</span>
+        </div>
+        <ul>
+            <li><a href="topbar.html" class="current">Topbar</a></li>
+            <!-- class="current" highlights the page the visitor is already on -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../shop/shop.html">Shop</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+   
+</body>
+
+</html>
