@@ -3,83 +3,72 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>RadArt</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="icon" type="image/png" href="images/logo.png">    <!-- eveything inside the <head> tags is meta data: Data about Data. Things like the page title and links to css documents etc.-->
+    <link rel="icon" type="image/png" href="assets/logo.png">    <!-- eveything inside the <head> tags is meta data: Data about Data. Things like the page title and links to css documents etc.-->
 </head>
 
 <body>
-    <iframe src="topbar/topbar.html" style="width: 100%; border: none; height: 200px;"? id="topbar_iframe"></iframe>
-    <!-- Everything inside the body tags is what is shown to the viewer. All of you website content must go between the <body> and </body> tags.  -->
+    <script src="/topbar/topbar.js"></script>
+    <script src="index.js"></script>
     <div id="container">
         <div id="header">
-            <h1>header 1</h1>
+            <h1>RadArt</h1>
         </div>
-        <div id="navbar">
-            <h2>
-                <li>Navbar1</li>
-                <li>Navbar2</li>
-                <li>Navbar3</li>
-                <li>Navbar4</li>
-                <li>Navbar5</li>
-            </h2>
-        </div>
-        <div id="menu">
-            <ul>
-                <li><a href="http/www.google.com">menu1</a></li>
-                <li>menu2</li>
-                <li>menu3</li>
-                <li>menu4</li>
-                <li>menu5</li>
-            </ul>
-        </div>
+       
         <div id="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia, augue sit amet facilisis
-                vulputate, lorem elit egestas ipsum, sit amet tempus augue augue lobortis leo. Donec non elementum arcu.
-                Integer pretium dui id urna congue ultrices. Sed vulputate consequat mi, at auctor sem sodales id. Etiam
-                nec sapien ut ante aliquam ornare. Aenean congue dolor eu diam molestie pretium. Integer sapien magna,
-                ornare vestibulum fringilla eu, vulputate id purus. Nullam sed eros vitae tortor varius mollis
-                adipiscing vitae urna.</p>
+            <blockquote>For the love of art, give me Rat Rad!</blockquote>
 
-            <p>Duis at sapien at nunc iaculis posuere at nec tellus. Morbi pretium hendrerit sapien. Pellentesque
-                convallis fringilla pellentesque. Sed bibendum risus ac erat eleifend at scelerisque ipsum congue. Duis
-                tincidunt, leo at rhoncus dapibus, tortor quam faucibus est, vel consequat enim nisi scelerisque sapien.
-                Aliquam ac nisl feugiat ante volutpat rutrum. Nulla volutpat erat porttitor nulla venenatis quis egestas
-                felis semper. In hac habitasse platea dictumst. Fusce viverra fringilla diam id sollicitudin. Curabitur
-                in justo diam, ut pulvinar quam. Aenean et eros ac lacus bibendum tristique vel a est. Integer
-                adipiscing leo ut quam lobortis ac sollicitudin augue hendrerit.</p>
+            <p>We help Australian kids sell their art pieces. Let's all appreciate artwork and 
+                and the dedication these kids have shown to crafting them.😐
+            </p>
+            <a href="/shop/shop.html" target="_blank">
+                <button>Shop</button>
+            </a>
+            <p>Warning, this site is hazardous, save yourselves!</p>
+             <button id="save_me_button">Save me, please!</button>
+            
+            <!-- Dialogue Popup -->
+            <dialog id="save_me_popup" style="padding: 20px; border-radius: 8px; border: 1px solid #ccc;">
+                <h3>Ways to escape hell</h3>
+                <p>This site is made with pure js, html and css, no web framework</p>
+                <p>Real developers use fast, modern web frameworks, build with the use of node js</p>
+                <p>They have access to all the npmjs.org libraries so not not have to 
+                    build much functionality from scratch, have features such as two way data 
+                    binding and dependancy injection, aot compilation, native routing support,
+                    typescript and access to prebuilt and cleanly styled component libraries, all the styling they need
+                    is structural, and they follow the intended look and feel of the component library,
+                    in addition to native theming support benifits. Additional, developers
+                    experience and productivity is boosted, with an out of the box clean and modular structure composed
+                    of components, services, imports, selectors, data bindings, dependancy injection.
+                    Devlopment is fast if developers are happy. 
+                </p>
+                <p>Maintained by millions of happy developers, companies, and organizations! Take your pick into an 
+                    exciting new world!
+                </p>
+                
+                <!-- Redirection Menus -->
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <button onclick="window.location.href='https://react.dev'">React</button>
+                    <button onclick="window.location.href='https://angular.dev'">Angular</button>
+                    <button onclick="window.location.href='https://svelte.dev/'">Svelete kit (recommended)</button>
+                </div>
+                <p>Developers now coordinate agents through their words, coding is not economically
+                    viable anymore, more than 70% of all of google's internal code is generated by AI.
+                </p>
+                 <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <button onclick="window.location.href='https://cursor.sh'">Cursor</button>
+                    <button onclick="window.location.href='https://claude.com/product/claude-code'">Claude Code (recommended)</button>
+                    <button onclick="window.location.href='https://openai.com/codex/'">Codex (recommended)</button>
+                </div>
 
-            <p>Maecenas ut tellus ipsum. Praesent vestibulum condimentum nibh, sed vehicula velit congue vitae. In hac
-                habitasse platea dictumst. Duis scelerisque lacus eu mi consequat in auctor felis bibendum. Cras quis
-                viverra dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Ut arcu enim, auctor quis sodales eget, cursus eu nunc. In hac habitasse platea dictumst.
-                Integer non rutrum quam. Sed pretium vulputate libero in dignissim.</p>
-
-            <p>Etiam at rutrum quam. Vivamus non nisi eget eros tempor rhoncus. Sed volutpat leo at libero pellentesque
-                cursus. Nullam laoreet ultrices orci ornare vulputate. Quisque a blandit est. Praesent dictum interdum
-                sagittis. Morbi non hendrerit nisi. Aliquam sed turpis diam, eu semper urna. Nullam tincidunt, mi a
-                placerat sagittis, neque lacus dignissim ligula, quis euismod enim sem eget diam. Morbi at lorem erat,
-                at luctus libero. Vivamus vulputate vehicula fringilla.</p>
-
-            <p>Aenean id neque ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Suspendisse a tellus nec est malesuada malesuada. Aenean fermentum ullamcorper
-                adipiscing. Quisque malesuada odio ut odio varius facilisis. Sed sed nulla felis. Morbi et quam nulla, a
-                porta leo. Nunc sodales metus non justo scelerisque sit amet iaculis dolor suscipit. Pellentesque semper
-                mauris in odio molestie aliquet. In hac habitasse platea dictumst. Vestibulum quis leo in tortor
-                interdum cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Suspendisse potenti. Quisque risus nulla, ullamcorper vel malesuada nec, tincidunt ac enim.</p>
-
-            <p>Aenean id neque ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Suspendisse a tellus nec est malesuada malesuada. Aenean fermentum ullamcorper
-                adipiscing. Quisque malesuada odio ut odio varius facilisis. Sed sed nulla felis. Morbi et quam nulla, a
-                porta leo. Nunc sodales metus non justo scelerisque sit amet iaculis dolor suscipit. Pellentesque semper
-                mauris in odio molestie aliquet. In hac habitasse platea dictumst. Vestibulum quis leo in tortor
-                interdum cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Suspendisse potenti. Quisque risus nulla, ullamcorper vel malesuada nec, tincidunt ac enim.</p>
-        </div>
-        <div id="footer">
-            <p>This is the Footer</p>
+                <hr>
+                <!-- Close Option -->
+                <button id="closeBtn">Close, proceed with torture</button>
+            </dialog>
+   
+           
         </div>
     </div>
+    <script src="/footer/footer.js"></script>
 </body>
 
 </html>

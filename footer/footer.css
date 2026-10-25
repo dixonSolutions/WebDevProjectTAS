@@ -1,0 +1,8 @@
+#footer {
+  border-top: 1px solid #000000;    /* Top separator line */
+  border-bottom: 1px solid #000000; /* Bottom separator line */
+  padding-top: 20px;             /* Spacing inside, below top line */
+  padding-bottom: 20px;          /* Spacing inside, above bottom line */
+  margin-top: 20px;              /* Spacing outside, above top line */
+  margin-bottom: 20px;           /* Spacing outside, below bottom line */
+}

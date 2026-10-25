@@ -1,73 +1,29 @@
-/* CSS Document - styles for the topbar */
-
-/* The topbar is the strip that sits across the very top of every page.
-   It holds the logo on the left and the navigation links on the right. */
 #topbar {
-    width: 100%;
-    height: 60px;
-    /* same blue as the site header so the pages match */
-    position: fixed;
-    /* fixed keeps the bar glued to the top of the window even when you scroll */
-    padding-bottom: 1%;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
-    /* z-index decides what sits in front. A high number keeps the bar above the page content */
-    font-family: Tahoma, Geneva, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal 1/5 screen columns */
+  width: 100%;
+  align-items: center;
 }
 
-/* ----- the logo on the left ----- */
-#topbar #logo {
-    float: left;
-    /* floats the logo to the left hand side of the bar */
-    height: 60px;
-    padding-left: 20px;
+/* Make the logo container fit its slot and scale internal elements */
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  width: 100%;
+  overflow: hidden;
 }
 
-#topbar #logo img {
-    height: 40px;
-    /* shrinks the logo picture so it fits inside the 60px tall bar */
-    margin-top: 10px;
-    /* (60 - 40) / 2 = 10, which centres the logo vertically */
-    float: left;
+/* Force image to scale proportionally within its container */
+#topbar-img {
+  width: 100%;
+  max-width: 4vw;   /* Scales down dynamically with the screen */
+  height: auto;
+  object-fit: contain;
 }
-
-#topbar #logo span {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    /* converts all text to capitals, matching the site header */
-    /* line-height the same as the bar height centres the text vertically */
-    padding-left: 10px;
-    float: left;
+#topbar {
+  border-top: 1px solid #000000;    /* Top separator line */
+  border-bottom: 1px solid #000000; /* Bottom separator line */
+  padding-bottom: 20px;          /* Spacing inside, above bottom line */
+  margin-bottom: 20px;           /* Spacing outside, below bottom line */
 }
-
-/* ----- the navigation links on the right ----- */
-#topbar ul {
-    float: right;
-    /* floats the list of links to the right hand side of the bar */
-    margin: 0px;
-    padding-right: 20px;
-}
-
-#topbar li {
-    display: inline;
-    /* inline lays the list out horizontally instead of stacking it downwards */
-    list-style-type: none;
-    /* removes the bullet points */
-}
-
-#topbar a {
-    display: inline-block;
-    /* inline-block lets the link sit in a row but still take a height and padding */
-    height: 60px;
-    line-height: 60px;
-    padding: 0px 18px;
-    text-decoration: none;
-    /* removes the underline browsers put on links by default */
-    text-transform: uppercase;
-}
-
-
-
